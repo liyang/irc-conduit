@@ -38,7 +38,7 @@ LENS((Event a),raw,ByteString)
 LENS((Event a),source,(Source a))
 LENS((Event a),message,(Message a))
 
--- * Prisms for 'Source'
+-- * #Source# Prisms for 'Source'
 PRISM((Source a),User,name,name,(NickName a))
 PRISM((Source a),Channel,chan name,(chan,name),(ChannelName a, NickName a))
 PRISM((Source a),Server,name,name,(ServerName a))
